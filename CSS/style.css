@@ -710,10 +710,12 @@ h1.title {
     80% {
         opacity: 1;
         filter: blur(55px);
+        display:flex;
     }
     100% {
         opacity: 0;
         
+        display:none;
         filter: blur(55px);
     }
 }
