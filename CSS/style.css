@@ -523,6 +523,42 @@ h1.title {
     font-size: 18px;
     font-weight: 500;
 }
+.taklifus #spec {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.taklifus .spec h2 {
+    text-align: center;
+    font-size: 36px;
+    color: blue;
+    font-weight: 800;
+}
+.taklifus .spec p {
+    font-size: 18px;
+    font-weight: 700;
+    background: cornsilk;
+    text-align: center;
+}
+p[a] a{
+    position: relative;
+    margin-top: 10px;
+    color: yellow;
+    font-size: 20px;
+    font-weight: 800;
+    animation: a 10s linear infinite;
+}
+@keyframes a {
+    0%,100% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 5px red,
+        0 0 8px crimson,
+        0 0 10px rgb(255, 0, 149),
+        0 0 15px rgb(255, 0, 225);
+    }
+}
 /* .takliflar .content  */
 
 .container5 {
