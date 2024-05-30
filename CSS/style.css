@@ -710,13 +710,16 @@ h1.title {
     80% {
         opacity: 1;
         filter: blur(55px);
-        display:flex;
+        display: flex;
+    }
+    99% {
+        transform: translateX(0);
     }
     100% {
         opacity: 0;
-        
-        display:none;
+        display: none;
         filter: blur(55px);
+        transform: translateX(-2500px);
     }
 }
 .container-1 h1 {
@@ -733,6 +736,68 @@ h1.title {
     color: navy;
     -webkit-text-stroke: 1px silver;
 }
+
+.spesContainer {
+    position: relative;
+}
+.spesContainer .nav {
+    flex-direction: column;
+    gap: 4px;
+    padding: 5px 5px 5px 5px;
+}
+.spesContainer h1 {
+    color: blue;
+    -webkit-text-stroke: 0.4px red;
+}
+.spesContainer h4 {
+    position: relative;
+    width: 60%;
+    text-align: center;
+    color: cadetblue;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.spec form {
+    /* margin: 35px; */
+    padding: 35px;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.spec form .fluid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.spec .fluid input {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+    background: transparent;
+    border: 0.1px solid silver;
+}
+.spec input:hover {
+    position: relative;
+    box-shadow: 0 0 9px .5px silver;
+}
+.spec button {
+    position: absolute;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 12px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    color: blue;
+    background: transparent;
+    border: 0.1px solid silver;
+}
+
+
 
 
 .hide {
